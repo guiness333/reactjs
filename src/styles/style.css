@@ -1,0 +1,43 @@
+.container {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.geral {
+    position: relative;
+    display: flex;
+    font-size: 16px;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 5px solid #b1b1b1;
+    max-width: 95%;
+}
+.geral h2 {
+    padding: 5px;
+    margin-left: 5%;
+}
+.erros{
+    color: red;
+}
+.integrados{
+    color: green;
+}
+.total {
+    color: blue;
+}
+.listErros ul{
+    list-style: none;
+    font-size: 18px;
+    max-width: 80%;
+}
+.listErros ul li{
+    text-align: justify;
+    padding: 5px;
+    margin-left: 22%;
+    
+}
