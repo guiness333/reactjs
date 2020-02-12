@@ -4,7 +4,12 @@ import api from './api';
 
 async function getErros(param1,param2){
     let data = {};
-    const response = await api.get(`order?limit=10000&gte=${param1}&lte=${param2}`)
+    const response = await api.get(`order?limit=10000&gte=${param1}&lte=${param2}`,{
+        header: {
+            'Access-Control-Allow-Origin': '*'
+        }
+    }
+    )
     const integrationError    =    item=>  !item.isExported
     const integrationSuccess  =    item=> item.isExported
     const orderDeliveryDateNull = item=> item.OrderDeliveryDate === null;

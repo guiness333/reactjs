@@ -29,6 +29,7 @@ function PagePedido(){
             
         });
     }, []);
+    console.log(products);
     return(
         <div>
             {exportMessage}<br/>
