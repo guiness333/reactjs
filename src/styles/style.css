@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 .container {
     width: 90%;
     margin: auto;
@@ -12,10 +16,12 @@
     font-size: 16px;
     text-align: center;
     align-content: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 10px;
     background-color: #f1f1f1;
-    border: 5px solid #b1b1b1;
-    max-width: 95%;
+    border-bottom: 5px solid #b1b1b1;
+    max-width: 100%;
 }
 .data {
     text-align: center;
@@ -34,14 +40,44 @@
 .total {
     color: blue;
 }
+.erro_id{
+    float: right;
+    margin-right: 10px;
+    max-width: 260px;
+    min-width: 260px;
+}
+.taxvat{
+    float: left;
+    margin-right: 10px;
+}
+
+
 .listErros ul{
     list-style: none;
     font-size: 18px;
-    max-width: 80%;
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color:red;
+}
+.listErros ul li:hover{
+    background-color: black;
 }
 .listErros ul li{
-    text-align: justify;
-    padding: 5px;
-    margin-left: 22%;
+    text-align: center;
     
+    padding: 5px;
+    padding-left: 5%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    background-color: #d1d1d1;
+}
+
+.imagem {
+    margin: 0 auto;
+    padding-top: 25%;
+    position: absolute;
 }

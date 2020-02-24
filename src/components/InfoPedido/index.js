@@ -5,7 +5,7 @@ function PagePedido(){
     let { id } = useParams();
     const [exportMessage, setExportMessage] = useState([]);
     const [isExported, setIsExported] = useState([]);
-    const [customerTaxVat, setCustomerTaxVat] =  useState([]);
+    const [customerTaxvat, setCustomerTaxVat] =  useState([]);
     const [customerName, setCustomerName] =  useState([]);
     const [customerOrderNumber, setCustomerOrderNumber] = useState([]);
     const [customerUF, setCustomerUF] = useState([]);
@@ -19,27 +19,31 @@ function PagePedido(){
             console.log(e)
             setExportMessage(e.body.exportMessage);
             setIsExported(e.body.isExported);
-            setCustomerTaxVat(e.body.customerTaxvat);
+            setCustomerTaxVat(e.body.CustomerTaxvat);
             setCustomerName(e.body.CustomerName);
             setCustomerOrderNumber(e.body.CustomerOrderNumber);
             setCustomerUF(e.body.CustomerUF);
             setOrderDate(e.body.OrderDate);
             setOrderStatus(e.body.OrderStatus);
             setProducts(e.body.Order.Products);
-            
         });
     }, []);
-    console.log(products);
+    
     return(
         <div>
-            {exportMessage}<br/>
-            {isExported}<br/>
-            {customerTaxVat}<br/>
-            {customerUF}<br/>
-            {customerName}<br/>
-            {customerOrderNumber}<br/>
-            {orderDate}<br/>
-            {orderStatus}<br/>
+            <section className="container">
+                <h1 className="titulo">{exportMessage}</h1>
+                <div>
+                    <h2>taxvat: {customerTaxvat}</h2>
+                    <h2>Rede: {customerName}</h2>
+                    <h2>Ordem: {customerOrderNumber}</h2>
+                    <h2>UF: {customerUF}</h2>
+                    <h2>Data do pedido: {orderDate}</h2>
+                    <h2>Status do Pedido: {orderStatus}</h2>
+                </div>
+
+
+            </section>
             
         </div>
     );
