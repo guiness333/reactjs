@@ -30,6 +30,15 @@
         display: block;
         text-align: justify;
     }
+    .container{
+        width: 100%;
+    }
+    .order{
+        clear: both;
+    }
+    
+    
+
 }
 .data {
     text-align: center;
@@ -76,14 +85,15 @@
 }
 .listErros ul li{
     text-align: center;
-    
     padding: 5px;
     padding-left: 5%;
     margin-bottom: 5px;
     border-radius: 5px;
     background-color: #d1d1d1;
 }
-
+a {
+    display: block;
+}
 .imagem {
     margin: 0 auto;
     padding-top: 25%;
