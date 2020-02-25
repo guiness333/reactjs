@@ -52,7 +52,7 @@ function Home(){
             <section className="listErros">
                 <ul>
                     {erros.map(erro => (
-                        <Link className="link" key={erro._id} to={`/${erro._id}`}><li key={erro._id}><a className="erro_id">ID:{erro._id}</a> <a className="taxvat">TAXVAT: {erro.CustomerTaxvat}</a> <a className="order">ORDER: {erro.CustomerOrderNumber}</a></li></Link>
+                        <Link className="link" key={erro._id} to={`reactjs/${erro._id}`}><li key={erro._id}><a className="erro_id">ID:{erro._id}</a> <a className="taxvat">TAXVAT: {erro.CustomerTaxvat}</a> <a className="order">ORDER: {erro.CustomerOrderNumber}</a></li></Link>
                     ))}
                 </ul>
             </section>

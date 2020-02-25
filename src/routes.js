@@ -6,8 +6,8 @@ import pagePedido from './components/InfoPedido';
 const Routes = () =>{
     return(
         <BrowserRouter>
-            <Route exact path="/"  component={Home}/>
-            <Route path="/:id" component={pagePedido}/>
+            <Route exact path="/reactjs/"  component={Home}/>
+            <Route path="/reactjs/:id" component={pagePedido}/>
         </BrowserRouter>
     )
 }
