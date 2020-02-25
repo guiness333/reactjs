@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import getErros from './services/erros';
 import Routes from './routes';
 function App(){
