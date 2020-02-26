@@ -5,10 +5,10 @@ import pagePedido from './components/InfoPedido';
 
 const Routes = () =>{
     return(
-        <BrowserRouter HashRouter basename='/reactjs/'>
+        <HashRouter basename='/reactjs/'>
             <Route exact path="/"  component={Home}/>
             <Route path="/:id" component={pagePedido}/>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 
