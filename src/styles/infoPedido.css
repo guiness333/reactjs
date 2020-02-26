@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+.produto{
+    display: block;
+    float: left;
+    width: 250px;
+    height: 300px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid black;
+}
+.info{
+    background-color: #d1d1d1;
+    max-height: 90px;
+}
+span{
+    display: block;
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+}

@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import { useParams } from 'react-router';
 import infoPedido from '../../services/infoPedido';
+import '../../styles/infoPedido.css';
 function PagePedido(){
     let { id } = useParams();
     const [exportMessage, setExportMessage] = useState([]);
@@ -40,6 +41,22 @@ function PagePedido(){
                     <h2>UF: {customerUF}</h2>
                     <h2>Data do pedido: {orderDate}</h2>
                     <h2>Status do Pedido: {orderStatus}</h2>
+                    <div className="listProdutos">
+                        {products.map(e => {
+                            console.log(e)
+                            return(
+                            <section className="produto" key={e.SKU}> 
+                                <img src={e.ProductImage} alt={e.ProductName}/>
+                                <section className="info">
+                                    <span>SKU: {e.SKU}</span>
+                                    <span>Produto: {e.ProductName}</span>
+                                    <span>Quantidade: {e.Quantity}</span>
+                                    <span>Total: {e.TotalPrice}</span>
+                                </section>
+                            </section>
+                            )
+                        })}
+                    </div>
                 </div>
 
 
